@@ -15,6 +15,10 @@ a {
     color: currentColor;
 }
 
+img {
+    display: block;
+}
+
 /* #endregion RESET */
 
 /* #region TYPOGRAPHY */
@@ -25,6 +29,7 @@ a {
     --purple: #9792e4;
     --orange: #fdc15f;
     --grey: #333333;
+    --blueish-grey: #5a6e7f;
 }
 
 /* #endregion TYPOGRAPHY */
@@ -39,6 +44,15 @@ a {
     max-width: 1202px;
     margin: 0 auto;
     padding: 0 32px;
+}
+
+section:nth-of-type(even) {
+    background-color: var(--purple);
+}
+
+.element {
+    width: calc((100% - 48px) / 3);
+    align-self: stretch;
 }
 
 /* #endregion COMMON */
@@ -67,6 +81,26 @@ header .container .col .hamburger {
 
 /* #region MAIN */
 
+.what-we-do .container {
+    flex-direction: column;
+    padding: 50px 32px 104px;
+}
+
+.what-we-do .container,
+.what-we-do .container .row {
+    gap: 24px;
+}
+
+.what-we-do .container .row .element:first-child {
+    flex-grow: 1;
+}
+
+.what-we-do .container .row .element {
+    background-color: var(--sky);
+    color: var(--blueish-grey);
+    font-weight: bold;
+}
+
 /* #endregion MAIN */
 
 /* #region FOOTER */
@@ -90,6 +124,19 @@ header .container .col .hamburger {
 
 /* Mobile da 0 a 576px */
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+
+    .what-we-do .container {
+        padding-bottom: 80px;
+    }
+
+    .what-we-do .container .row {
+        flex-direction: column;
+    }
+
+    .what-we-do .container .row .element {
+        width: 100%;
+    }
+}
 
 /* #endregion MEDIA QUERIES */
