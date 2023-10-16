@@ -17,6 +17,7 @@ a {
 
 img {
     display: block;
+    width: 100%;
 }
 
 /* #endregion RESET */
@@ -81,6 +82,8 @@ header .container .col .hamburger {
 
 /* #region MAIN */
 
+/* #region what-we-do */
+
 .what-we-do .container {
     flex-direction: column;
     padding: 50px 32px 104px;
@@ -101,6 +104,20 @@ header .container .col .hamburger {
     font-weight: bold;
 }
 
+/* #endregion what-we-do */
+
+/* #region where-to-use */
+
+.where-to-use .container {
+    padding: 134px 164px 64px;
+}
+
+.where-to-use .container .col {
+    width: 50%;
+}
+
+/* #endregion where-to-use */
+
 /* #endregion MAIN */
 
 /* #region FOOTER */
@@ -113,6 +130,8 @@ header .container .col .hamburger {
 
 @media screen and (max-width: 768px) {
 
+    /* Header */
+
     header .container .col .hamburger {
         display: block;
     }
@@ -120,11 +139,23 @@ header .container .col .hamburger {
     header .container ul {
         display: none;
     }
+
+    /* Header */
+
+    /* Sezione where-to-use */
+
+    .where-to-use .container {
+        padding: 140px 32px 64px;
+    }
+
+    /* /Sezione where-to-use */
 }
 
 /* Mobile da 0 a 576px */
 
 @media screen and (max-width: 576px) {
+
+    /* Sezione what-we-do */
 
     .what-we-do .container {
         padding-bottom: 80px;
@@ -137,6 +168,18 @@ header .container .col .hamburger {
     .what-we-do .container .row .element {
         width: 100%;
     }
+
+    /* /Sezione what-we-do */
+
+    /* Sezione where-to-use */
+
+    .where-to-use .container {
+        flex-direction: column;
+        padding: 68px 32px 64px;
+        gap: 40px;
+    }
+
+    /* /Sezione where-to-use */
 }
 
 /* #endregion MEDIA QUERIES */
