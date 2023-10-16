@@ -213,6 +213,10 @@ footer .info {
     color: white;
 }
 
+footer .info p:first-child {
+    padding-bottom: 73px;
+}
+
 /* #endregion FOOTER */
 
 /* #region MEDIA QUERIES */
