@@ -202,6 +202,17 @@ header .container .col .hamburger {
 
 /* #region FOOTER */
 
+footer {
+    text-align: center;
+    background-color: var(--grey);
+    padding: 64px 0;
+}
+
+footer .info {
+    text-align: center;
+    color: white;
+}
+
 /* #endregion FOOTER */
 
 /* #region MEDIA QUERIES */
