@@ -94,15 +94,19 @@ header .container .col .hamburger {
     gap: 24px;
 }
 
-.what-we-do .container .row .element:first-child {
-    flex-grow: 1;
-}
-
 .what-we-do .container .row .element {
     background-color: var(--sky);
     color: var(--blueish-grey);
     font-weight: bold;
+    text-align: center;
 }
+
+.what-we-do .container .row:first-child .element:first-child {
+    flex-grow: 1;
+    text-align: start;
+}
+
+
 
 /* #endregion what-we-do */
 
