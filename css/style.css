@@ -120,6 +120,12 @@ header .container .col .hamburger {
     width: 50%;
 }
 
+.where-to-use .container .col.right {
+    background-color: white;
+    margin-top: 175px;
+    text-align: center;
+}
+
 /* #endregion where-to-use */
 
 /* #region testimonials */
@@ -239,12 +245,24 @@ footer .info p:first-child {
         display: none;
     }
 
-    /* Header */
+    /* /Header */
+
+    /* Sezione what-we-do */
+
+    .what-we-do .container .row .element {
+        flex-direction: column;
+    }
+
+    /* /Sezione what-we-do */
 
     /* Sezione where-to-use */
 
     .where-to-use .container {
         padding: 140px 32px 64px;
+    }
+
+    .where-to-use .container .col.right {
+        margin-top: 0;
     }
 
     /* /Sezione where-to-use */
