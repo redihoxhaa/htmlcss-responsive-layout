@@ -148,8 +148,29 @@ header .container .col .hamburger {
     width: 200px;
 }
 
-
 /* #endregion testimonials */
+
+/* #region benefits */
+
+.benefits .container h2 {
+    padding: 78px 0 76px;
+    text-align: center;
+    color: white;
+}
+
+.benefits .container .grid {
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-bottom: 64px;
+}
+
+.benefits .container .grid .element {
+    width: calc((100% - 64px) / 3);
+    background-color: white;
+    color: var(--blueish-grey);
+}
+
+/* #endregion benefits */
 
 /* #endregion MAIN */
 
@@ -182,6 +203,14 @@ header .container .col .hamburger {
     }
 
     /* /Sezione where-to-use */
+
+    /* Sezione benefits */
+
+    .benefits .container .grid .element {
+        width: calc((100% - 32px) / 2);
+    }
+
+    /* /Sezione benefits */
 }
 
 /* Mobile da 0 a 576px */
@@ -226,6 +255,18 @@ header .container .col .hamburger {
     }
 
     /* /Sezione testimonials */
+
+    /* Sezione benefits */
+
+    .benefits .container h2 {
+        padding: 74px 0 75px;
+    }
+
+    .benefits .container .grid .element {
+        width: 100%;
+    }
+
+    /* /Sezione benefits */
 }
 
 /* #endregion MEDIA QUERIES */
