@@ -108,24 +108,23 @@ header .container .col .hamburger {
 /* #region what-we-do */
 
 .what-we-do .container {
-    flex-direction: column;
     padding: 50px 32px 104px;
+    flex-wrap: wrap;
 }
 
-.what-we-do .container,
-.what-we-do .container .row {
+.what-we-do .container {
     gap: 24px;
 }
 
-.what-we-do .container .row .element {
+.what-we-do .container .element {
     background-color: var(--sky);
     color: var(--blueish-grey);
     font-weight: bold;
     text-align: center;
 }
 
-.what-we-do .container .row:first-child .element:first-child {
-    flex-grow: 1;
+.what-we-do .container:first-child .element:first-child {
+    width: calc(((100% - 48px) / 3) * 2 + 24px);
     text-align: start;
 }
 
@@ -272,7 +271,7 @@ footer .info p:first-child {
 
     /* Sezione what-we-do */
 
-    .what-we-do .container .row .element {
+    .what-we-do .container .element {
         flex-direction: column;
     }
 
@@ -320,6 +319,12 @@ footer .info p:first-child {
     /* /Sezione about-us */
 }
 
+
+
+
+
+
+
 /* Mobile da 0 a 768px */
 
 @media screen and (max-width: 768px) {
@@ -330,13 +335,15 @@ footer .info p:first-child {
         padding-bottom: 80px;
     }
 
-    .what-we-do .container .row {
+    .what-we-do .container {
         flex-direction: column;
     }
 
-    .what-we-do .container .row .element {
+    .what-we-do .container .element,
+    .what-we-do .container:first-child .element:first-child {
         width: 100%;
     }
+
 
     /* /Sezione what-we-do */
 
