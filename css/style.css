@@ -291,15 +291,22 @@ header .container .col .hamburger {
 }
 
 .testimonials .container .grid .row .col.info {
-    padding: 6px 32px 0 65px;
+    padding: 28px 32px 0px 65px;
     line-height: 1.9375rem;
 }
 
+.testimonials .container .grid .row .col.info i:first-child {
+    vertical-align: top;
+    padding-right: 4px;
+}
 
+.testimonials .container .grid .row .col.info i:last-of-type {
+    padding-left: 4px;
+}
 
 .testimonials .container .grid .row .col.info .testimonial-name {
     font-weight: bold;
-    margin-top: 32px;
+    margin-top: 25px;
     letter-spacing: 2px;
 }
 
@@ -436,7 +443,7 @@ footer .info p:first-child {
 
     .where-to-use .container .col.left p {
         font-size: 1rem;
-        line-height: 1.75rem;
+        line-height: 1.9375rem;
     }
 
     .where-to-use .container .col.left h2 {
@@ -457,6 +464,24 @@ footer .info p:first-child {
 
 
     /* /Sezione where-to-use */
+
+    /* Sezione testimonials*/
+
+    .testimonials .container .testimonials-info p {
+        line-height: 2rem;
+    }
+
+    .testimonials .container .testimonials-info h2 {
+        font-size: 2.75rem;
+    }
+
+    .testimonials .container .grid .row .col.info {
+        padding-left: 32px;
+        padding-right: 0;
+        line-height: 2rem;
+    }
+
+    /* /Sezione testimonials*/
 
     /* Sezione benefits */
 
@@ -576,11 +601,36 @@ footer .info p:first-child {
 
     .testimonials .container .grid .row {
         flex-direction: column;
-        padding: 32px 22px 38px;
+        padding: 32px 18px 26px;
     }
 
     .testimonials .container .grid .row .col.pic {
         align-self: center;
+    }
+
+
+    .testimonials .container .testimonials-info h2 {
+        font-size: 2.25rem;
+    }
+
+    .testimonials .container .testimonials-info p {
+        line-height: 2.125rem;
+    }
+
+    .testimonials .container .grid .row .col.info {
+        text-align: center;
+        padding-top: 17px;
+        padding-left: 0px;
+
+    }
+
+    .testimonials .container .grid .row .col.info span {
+        line-height: 2.125rem;
+        margin-top: -2px;
+    }
+
+    .testimonials .container .grid .row .col.info .testimonial-name {
+        margin-top: 21px;
     }
 
     /* /Sezione testimonials */
