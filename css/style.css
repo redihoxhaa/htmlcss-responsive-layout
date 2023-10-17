@@ -4,6 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+button {
+    border: unset;
+    background-color: unset;
+
 }
 
 ul {
@@ -56,26 +63,42 @@ section:nth-of-type(even) {
     align-self: stretch;
 }
 
+.btn {
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
 /* #endregion COMMON */
 
 /* #region HEADER */
 
 header {
     background-color: var(--blue);
+    font-size: 18px;
 }
 
 header .container {
     justify-content: space-between;
     align-items: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+header .container .btn {
+    font-size: 18px;
 }
 
 header .container ul {
     gap: 33px;
+    align-items: center;
+    color: white;
 }
 
 header .container .col .hamburger {
     display: none;
     color: white;
+    font-size: 22px;
 }
 
 /* #endregion HEADER */
@@ -231,9 +254,9 @@ footer .info p:first-child {
 
 /* #region MEDIA QUERIES */
 
-/* Tablet da 0 a 768px */
+/* Tablet da 0 a 992px */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 
     /* Header */
 
@@ -259,6 +282,11 @@ footer .info p:first-child {
 
     .where-to-use .container {
         padding: 140px 32px 64px;
+        flex-direction: column;
+    }
+
+    .where-to-use .container .col {
+        width: 100%;
     }
 
     .where-to-use .container .col.right {
@@ -292,9 +320,9 @@ footer .info p:first-child {
     /* /Sezione about-us */
 }
 
-/* Mobile da 0 a 576px */
+/* Mobile da 0 a 768px */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
 
     /* Sezione what-we-do */
 
