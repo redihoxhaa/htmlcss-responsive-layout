@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
+    font-size: 1.125rem
 }
 
 button {
@@ -38,6 +39,7 @@ img {
     --orange: #fdc15f;
     --grey: #333333;
     --blueish-grey: #5a6e7f;
+    --border: 20px;
 }
 
 /* #endregion TYPOGRAPHY */
@@ -65,7 +67,7 @@ section:nth-of-type(even) {
 
 .btn {
     background-color: white;
-    border-radius: 20px;
+    border-radius: var(--border);
     padding: 8px 16px;
 }
 
@@ -75,7 +77,6 @@ section:nth-of-type(even) {
 
 header {
     background-color: var(--blue);
-    font-size: 18px;
 }
 
 header .container {
@@ -86,7 +87,7 @@ header .container {
 }
 
 header .container .btn {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 header .container ul {
@@ -98,7 +99,7 @@ header .container ul {
 header .container .col .hamburger {
     display: none;
     color: white;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 /* #endregion HEADER */
@@ -121,11 +122,58 @@ header .container .col .hamburger {
     color: var(--blueish-grey);
     font-weight: bold;
     text-align: center;
+    padding: 32px 24px 30px;
+    border-radius: var(--border);
+}
+
+.what-we-do .container .element i {
+    color: var(--blue);
+    font-size: 5rem;
+    padding-bottom: 24px;
+}
+
+.what-we-do .container .element h2 {
+    color: var(--blue);
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.what-we-do .container .element p {
+    line-height: 1.9375rem;
 }
 
 .what-we-do .container:first-child .element:first-child {
     width: calc(((100% - 48px) / 3) * 2 + 24px);
     text-align: start;
+    padding-bottom: 0;
+}
+
+.what-we-do .container:first-child .element:first-child .col.left {
+    padding-bottom: 60px;
+    padding-right: 28px;
+}
+
+.what-we-do .container:first-child .element:first-child .col.left button {
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 49px;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: 3px;
+    margin-top: 31px;
+
+}
+
+.what-we-do .container:first-child .element:first-child .col.left button i {
+    padding-right: 7px;
+    color: white;
+    font-size: inherit;
+    padding-bottom: 0;
+}
+
+.what-we-do .container:first-child .element:first-child .col.right {
+    align-items: flex-end;
+    padding-right: 52px;
 }
 
 
@@ -275,6 +323,14 @@ footer .info p:first-child {
         flex-direction: column;
     }
 
+    .what-we-do .container:first-child .element:first-child .col.right {
+        width: 65%;
+    }
+
+    .what-we-do .container .element i {
+        font-size: 4.5rem;
+    }
+
     /* /Sezione what-we-do */
 
     /* Sezione where-to-use */
@@ -333,15 +389,28 @@ footer .info p:first-child {
 
     .what-we-do .container {
         padding-bottom: 80px;
+        flex-direction: column;
     }
 
-    .what-we-do .container {
-        flex-direction: column;
+
+    .what-we-do .container .element p {
+        font-size: .875rem;
+        line-height: 1.5rem;
     }
 
     .what-we-do .container .element,
     .what-we-do .container:first-child .element:first-child {
         width: 100%;
+    }
+
+    .what-we-do .container:first-child .element:first-child .col.right {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .what-we-do .container:first-child .element:first-child .col.left button {
+        font-size: initial;
+
     }
 
 
