@@ -458,8 +458,48 @@ header .container .col .hamburger {
 
 .call-to-action {
     text-align: center;
-    padding: 68px 0;
+    padding: 63px 0;
+    color: white;
 }
+
+.call-to-action .cta {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    padding-bottom: 13px;
+}
+
+.call-to-action h2 {
+    font-size: 3rem;
+    padding-bottom: 24px;
+}
+
+.call-to-action h1 {
+    font-size: 6rem;
+    color: var(--orange);
+    padding-bottom: 24px;
+}
+
+.call-to-action p {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1.125rem;
+
+}
+
+.call-to-action .button-spaced {
+    background-color: white;
+    color: var(--purple);
+    padding: 27px 75px;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    margin: 34px 0 34px;
+}
+
+.call-to-action .copyright a {
+    text-decoration: underline;
+}
+
+
 
 /* #endregion call-to-action */
 
@@ -616,6 +656,14 @@ footer .info p:first-child {
     }
 
     /* /Sezione about-us */
+
+    /* Sezione call-to-action */
+    .call-to-action p {
+        width: 60%;
+
+    }
+
+    /* /Sezione call-to-action */
 }
 
 
@@ -795,6 +843,43 @@ footer .info p:first-child {
     }
 
     /* /Sezione about-us */
+
+    /* Sezione call-to-action */
+    .call-to-action {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.875rem;
+    }
+
+    .call-to-action h1 {
+        font-size: 3.75rem;
+    }
+
+    .call-to-action p {
+        width: 100%;
+        line-height: 1.75rem;
+
+    }
+
+    .call-to-action .button-spaced {
+        padding: 22px 71px;
+        font-size: 1rem;
+        margin: 34px 0 29px;
+    }
+
+    .call-to-action p,
+    .call-to-action .button-spaced {
+        font-size: 1rem;
+    }
+
+    .call-to-action .copyright {
+        font-size: .875rem;
+    }
+
+    /* /Sezione call-to-action */
 }
 
 /* #endregion MEDIA QUERIES */
