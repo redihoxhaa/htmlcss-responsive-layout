@@ -379,16 +379,78 @@ header .container .col .hamburger {
 /* #region about-us */
 
 .about-us .container {
-    padding: 102px 80px 159px;
+    padding: 80px 80px 145px;
+    gap: 107px;
 }
 
 .about-us .container .col.left {
-    flex: 2;
+    width: 66.6666%;
 }
 
-.about-us .container .col.right {
-    flex: 1;
+.about-us .container .col.left h2 {
+    font-size: 4.5rem;
+    color: var(--purple);
 }
+
+.about-us .container .col.left p {
+    font-size: 1.25rem;
+    line-height: 2.75rem;
+
+}
+
+.about-us .container .col.left p:first-of-type {
+
+    padding: 33px 0 47px;
+}
+
+
+.about-us .container .col.right {
+    width: 33.3333%;
+    width: 20%;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 15px;
+
+}
+
+.about-us .container .col.right .img-container {
+
+    position: relative;
+}
+
+.about-us .container .col.right .img-container i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--purple);
+    font-size: 4.75rem;
+}
+
+.about-us .container .col.right .img-container img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-us .container .col.right p {
+    font-size: 1.875rem;
+    color: var(--purple);
+    font-weight: bold;
+    padding: 24px 0 18px;
+    line-height: 2.5rem;
+}
+
+.about-us .container .col.right .btn {
+    background-color: var(--purple);
+    color: white;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+.about-us .container .col.right .btn i {
+    padding-right: 5px;
+}
+
 
 /* #endregion about-us */
 
@@ -533,15 +595,27 @@ footer .info p:first-child {
 
     .about-us .container {
         padding: 102px 64px 159px;
+        gap: 70px;
     }
 
     .about-us .container .col.left {
-        flex: 2;
+        width: 56%;
+        flex-shrink: 0;
     }
 
     .about-us .container .col.right {
-        flex: 1;
+        width: 46%;
     }
+
+    .about-us .container .col.right p {
+        font-size: 1.5rem;
+    }
+
+    .about-us .container .col.left p {
+        font-size: 1.125rem;
+        line-height: 2.5rem;
+    }
+
 
     /* /Sezione about-us */
 }
