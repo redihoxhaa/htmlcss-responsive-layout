@@ -259,15 +259,21 @@ header .container .col .hamburger {
 .testimonials .container {
     text-align: center;
     padding: 69px 32px 112px;
+    font-size: 1.25rem;
 }
 
 .testimonials .container .testimonials-info {
     padding-bottom: 52px;
 }
 
+.testimonials .container .testimonials-info div:first-child {
+    font-size: 1.125rem;
+}
+
 .testimonials .container .testimonials-info h2 {
-    padding: 44px 0 55px;
+    padding: 22px 0 35px;
     color: var(--purple);
+    font-size: 3rem;
 }
 
 .testimonials .container .grid {
@@ -278,10 +284,30 @@ header .container .col .hamburger {
 .testimonials .container .grid .row {
     background-color: var(--purple);
     padding: 32px 16px 48px;
+    border-radius: 50px;
+    align-items: center;
+    text-align: start;
+    color: white;
 }
 
-.testimonials .container .grid .row .col.pic {
+.testimonials .container .grid .row .col.info {
+    padding: 6px 32px 0 65px;
+    line-height: 1.9375rem;
+}
+
+
+
+.testimonials .container .grid .row .col.info .testimonial-name {
+    font-weight: bold;
+    margin-top: 32px;
+    letter-spacing: 2px;
+}
+
+.testimonials .container .grid .row .col.pic img {
     width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* #endregion testimonials */
