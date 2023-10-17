@@ -480,7 +480,7 @@ header .container .col .hamburger {
 }
 
 .call-to-action p {
-    width: 40%;
+    width: 25%;
     margin: 0 auto;
     font-size: 1.125rem;
 
@@ -510,21 +510,41 @@ header .container .col .hamburger {
 footer {
     text-align: center;
     background-color: var(--grey);
-    padding: 64px 0;
+    padding: 39px 0 40px;
+
 }
 
 footer .info {
     text-align: center;
     color: white;
+    width: 22%;
+    margin: 0 auto;
+
+}
+
+footer .info p {
+    line-height: normal;
+
 }
 
 footer .info p:first-child {
-    padding-bottom: 73px;
+    padding-bottom: 63px;
+}
+
+footer .info p a {
+    text-decoration: underline;
+    color: var(--purple);
 }
 
 /* #endregion FOOTER */
 
 /* #region MEDIA QUERIES */
+
+
+
+
+
+
 
 /* Tablet da 0 a 992px */
 
@@ -563,7 +583,7 @@ footer .info p:first-child {
 
     .where-to-use .container {
         flex-direction: column;
-        padding: 130px 32px 64px;
+        padding: 130px 34px 64px;
         gap: 35px;
     }
 
@@ -579,7 +599,7 @@ footer .info p:first-child {
 
     .where-to-use .container .col.left p {
         font-size: 1rem;
-        line-height: 1.9375rem;
+        line-height: 1.75rem;
     }
 
     .where-to-use .container .col.left h2 {
@@ -664,6 +684,14 @@ footer .info p:first-child {
     }
 
     /* /Sezione call-to-action */
+
+    /* Footer */
+
+    footer .info {
+        width: 52%;
+    }
+
+    /* /Footer */
 }
 
 
@@ -880,6 +908,16 @@ footer .info p:first-child {
     }
 
     /* /Sezione call-to-action */
+
+    /* Footer */
+
+    footer .info {
+        padding: 0 32px;
+        width: 100%;
+        font-size: .875rem;
+    }
+
+    /* /Footer */
 }
 
 /* #endregion MEDIA QUERIES */
