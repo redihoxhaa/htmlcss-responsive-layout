@@ -411,6 +411,7 @@ header .container .col .hamburger {
     flex-grow: 1;
     margin-top: 15px;
 
+
 }
 
 .about-us .container .col.right .img-container {
@@ -420,14 +421,13 @@ header .container .col .hamburger {
 
 .about-us .container .col.right .img-container i {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -10px;
+    right: -10px;
     color: var(--purple);
     font-size: 4.75rem;
 }
 
 .about-us .container .col.right .img-container img {
-    width: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -594,28 +594,26 @@ footer .info p:first-child {
     /* Sezione about-us */
 
     .about-us .container {
-        padding: 102px 64px 159px;
+        padding: 78px 64px 139px;
         gap: 70px;
     }
 
     .about-us .container .col.left {
-        width: 56%;
-        flex-shrink: 0;
+        width: 62%;
     }
 
     .about-us .container .col.right {
-        width: 46%;
+        width: 38%;
     }
 
     .about-us .container .col.right p {
-        font-size: 1.5rem;
+        font-size: 1.875rem;
     }
 
     .about-us .container .col.left p {
         font-size: 1.125rem;
         line-height: 2.5rem;
     }
-
 
     /* /Sezione about-us */
 }
@@ -713,7 +711,7 @@ footer .info p:first-child {
 
     .testimonials .container .grid .row {
         flex-direction: column;
-        padding: 32px 18px 26px;
+        padding: 32px 16px 26px;
     }
 
     .testimonials .container .grid .row .col.pic {
@@ -770,9 +768,30 @@ footer .info p:first-child {
     /* Sezione about-us */
 
     .about-us .container {
-        padding: 95px 32px 80px;
+        padding: 79px 32px 80px;
         flex-direction: column;
-        gap: 62px;
+        gap: 32px;
+    }
+
+    .about-us .container .col.left p {
+        line-height: 2.490rem;
+    }
+
+    .about-us .container .col.left,
+    .about-us .container .col.right {
+        width: 100%;
+    }
+
+    .about-us .container .col.left h2 {
+        font-size: 3rem;
+    }
+
+    .about-us .container .col.right .img-container {
+        width: 58%;
+    }
+
+    .about-us .container .col.right p {
+        margin-top: -5px
     }
 
     /* /Sezione about-us */
