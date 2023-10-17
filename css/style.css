@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
-    font-size: 1.125rem
+
 }
 
 button {
@@ -27,6 +27,11 @@ img {
     display: block;
     width: 100%;
 }
+
+p {
+    line-height: 1.9375rem;
+}
+
 
 /* #endregion RESET */
 
@@ -77,6 +82,7 @@ section:nth-of-type(even) {
 
 header {
     background-color: var(--blue);
+    font-size: 18px;
 }
 
 header .container {
@@ -126,6 +132,11 @@ header .container .col .hamburger {
     border-radius: var(--border);
 }
 
+.what-we-do .container .element p {
+    font-size: 1.125rem;
+
+}
+
 .what-we-do .container .element i {
     color: var(--blue);
     font-size: 5rem;
@@ -134,12 +145,8 @@ header .container .col .hamburger {
 
 .what-we-do .container .element h2 {
     color: var(--blue);
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 24px;
-}
-
-.what-we-do .container .element p {
-    line-height: 1.9375rem;
 }
 
 .what-we-do .container:first-child .element:first-child {
@@ -159,8 +166,9 @@ header .container .col .hamburger {
     padding: 10px 49px;
     font-size: inherit;
     font-weight: inherit;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     margin-top: 31px;
+    border-radius: 18px;
 
 }
 
@@ -183,17 +191,65 @@ header .container .col .hamburger {
 /* #region where-to-use */
 
 .where-to-use .container {
-    padding: 134px 164px 64px;
+    padding: 132px 164px 64px;
+    gap: 66px;
 }
 
 .where-to-use .container .col {
     width: 50%;
+    flex-direction: column;
+}
+
+.where-to-use .container .col.left {
+    color: white;
+    align-items: flex-start;
+}
+
+.where-to-use .container .col.left img {
+    padding-bottom: 131px;
+}
+
+.where-to-use .container .col.left p {
+    font-size: 1rem;
+    line-height: 1.6875rem;
+}
+
+.where-to-use .container .col.left h2 {
+    font-size: 2.125rem;
+    padding-bottom: 49px;
 }
 
 .where-to-use .container .col.right {
     background-color: white;
-    margin-top: 175px;
+    border-radius: 50px;
+    margin-top: 179px;
     text-align: center;
+    padding: 32px 40px 23px;
+    align-items: center;
+}
+
+.where-to-use .container .col.right h4 {
+    font-size: 1.5rem;
+    padding-bottom: 1px;
+}
+
+.where-to-use .container .col.right p {
+    margin-top: 15px;
+    font-size: 1.125rem;
+    font-style: italic;
+}
+
+.where-to-use .container .col.right img {
+    width: 75%;
+    padding-bottom: 24px;
+}
+
+.where-to-use .container .col.right i {
+    margin-top: 22px;
+    font-size: 1rem;
+    padding: 16px 18px;
+    background-color: var(--purple);
+    border-radius: 50%;
 }
 
 /* #endregion where-to-use */
@@ -324,11 +380,12 @@ footer .info p:first-child {
     }
 
     .what-we-do .container:first-child .element:first-child .col.right {
-        width: 65%;
+        margin-top: -20px;
+        width: 68%;
     }
 
     .what-we-do .container .element i {
-        font-size: 4.5rem;
+        font-size: 4.8rem;
     }
 
     /* /Sezione what-we-do */
@@ -336,17 +393,42 @@ footer .info p:first-child {
     /* Sezione where-to-use */
 
     .where-to-use .container {
-        padding: 140px 32px 64px;
         flex-direction: column;
+        padding: 130px 32px 64px;
+        gap: 35px;
     }
 
     .where-to-use .container .col {
         width: 100%;
     }
 
-    .where-to-use .container .col.right {
-        margin-top: 0;
+    .where-to-use .container .col.left img {
+        width: 92%;
+        align-self: center;
+
     }
+
+    .where-to-use .container .col.left p {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    .where-to-use .container .col.left h2 {
+        font-size: 4.5rem;
+        padding-bottom: 49px;
+    }
+
+    .where-to-use .container .col.right {
+        margin-top: -2px;
+    }
+
+
+    .where-to-use .container .col.right img {
+        width: 91%;
+        margin-bottom: -12px;
+    }
+
+
 
     /* /Sezione where-to-use */
 
@@ -387,15 +469,31 @@ footer .info p:first-child {
 
     /* Sezione what-we-do */
 
+
     .what-we-do .container {
         padding-bottom: 80px;
         flex-direction: column;
+
+    }
+
+    .what-we-do .container:first-child .element {
+        padding: 32px;
+    }
+
+    .what-we-do .container:first-child .element:first-child .col.left {
+        padding-right: 0px;
     }
 
 
+
     .what-we-do .container .element p {
-        font-size: .875rem;
-        line-height: 1.5rem;
+
+        line-height: 1.6875rem;
+        font-size: 1rem;
+    }
+
+    .what-we-do .container .element i {
+        font-size: 5rem;
     }
 
     .what-we-do .container .element,
@@ -406,6 +504,7 @@ footer .info p:first-child {
     .what-we-do .container:first-child .element:first-child .col.right {
         width: 100%;
         padding-right: 0;
+        margin-top: -24px;
     }
 
     .what-we-do .container:first-child .element:first-child .col.left button {
@@ -421,7 +520,28 @@ footer .info p:first-child {
     .where-to-use .container {
         flex-direction: column;
         padding: 68px 32px 64px;
-        gap: 40px;
+        gap: 33px;
+    }
+
+    .where-to-use .container .col.left img {
+        padding-bottom: 78px;
+        width: 100%;
+    }
+
+    .where-to-use .container .col.left h2 {
+        font-size: 2.125rem;
+    }
+
+    .where-to-use .container .col.right {
+        padding: 32px 0 21px;
+    }
+
+    .where-to-use .container .col.right p {
+        padding: 0 24px;
+    }
+
+    .where-to-use .container .col.right img {
+        width: 92%;
     }
 
     /* /Sezione where-to-use */
