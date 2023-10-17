@@ -32,6 +32,15 @@ p {
     line-height: 1.9375rem;
 }
 
+.button-spaced {
+    color: white;
+    padding: 10px 47px;
+    font-size: inherit;
+    font-weight: bold;
+    letter-spacing: 4px;
+    border-radius: 30px;
+}
+
 
 /* #endregion RESET */
 
@@ -322,9 +331,10 @@ header .container .col .hamburger {
 /* #region benefits */
 
 .benefits .container .info-benefits h2 {
-    padding: 78px 0 76px;
+    padding: 64px 0;
     text-align: center;
     color: white;
+    font-size: 3rem;
 }
 
 
@@ -338,6 +348,30 @@ header .container .col .hamburger {
     width: calc((100% - 64px) / 3);
     background-color: white;
     color: var(--blueish-grey);
+    border-radius: var(--border);
+    padding: 32px 34px;
+}
+
+.benefits .container .grid .element h2 {
+    font-size: 4.5rem;
+    margin-bottom: 9px;
+    color: var(--purple);
+
+}
+
+.benefits .container .grid .element h3 {
+    font-size: 1.5rem;
+    color: var(--purple);
+    margin-bottom: 18px;
+}
+
+.benefits .container .grid .element p {
+    line-height: 1.75rem;
+}
+
+.benefits .container .grid .element .button-spaced {
+    background-color: var(--purple);
+    margin-top: 22px;
 }
 
 /* #endregion benefits */
@@ -484,6 +518,10 @@ footer .info p:first-child {
     /* /Sezione testimonials*/
 
     /* Sezione benefits */
+
+    .benefits .container .info-benefits h2 {
+        font-size: 2.75rem;
+    }
 
     .benefits .container .grid .element {
         width: calc((100% - 32px) / 2);
@@ -638,11 +676,19 @@ footer .info p:first-child {
     /* Sezione benefits */
 
     .benefits .container .info-benefits h2 {
-        padding: 74px 0 75px;
+        font-size: 2.25rem;
     }
 
     .benefits .container .grid .element {
         width: 100%;
+    }
+
+    .benefits .container .grid .element h2 {
+        font-size: 3rem;
+    }
+
+    .benefits .container .grid .element h3 {
+        margin-top: 20px;
     }
 
     /* /Sezione benefits */
